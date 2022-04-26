@@ -1,0 +1,7 @@
+<html>
+<head> <script src="jquery-1.6.2.min.js"></script> </head>
+<body style="background-color: rgb(144,247,144);">
+
+<div id=test style='color:#8028E0; width:650px; position:relative; left:25%; top:100px;'><form action='usercpsubmit.php' method='post' enctype='multipart/form-data'><fieldset><legend><em><b>User Control Panel</b></em></legend><b><br/><b>Name: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='name'/><br/><b>Date of Birth: </b>&nbsp;<input type='date' name='bday'/><br/><br/><b>Avatar: </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id='uploadPreview' style='width: 100px; height: 100px;' src='empty-avatar.png' align='middle' />&nbsp;&nbsp;&nbsp;<input  id='uploadImage' type='file' name='avatar' onchange='PreviewImage();' accept='image/*' /><script type='text/javascript'>function PreviewImage() {var oFReader = new FileReader();oFReader.readAsDataURL(document.getElementById('uploadImage').files[0]); oFReader.onload = function (oFREvent) {document.getElementById('uploadPreview').src = oFREvent.target.result;};};</script><br/><br/><input type='submit' value='Save Changes' /></fieldset></form></div>
+</body>
+</html>
