@@ -1,2 +1,2 @@
 # blog_platform
-A blogging platform in PHP, MySQL, and JavaScript
+A blogging platform in <b>PHP, MySQL, and JavaScript</b>
